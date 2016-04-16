@@ -1,4 +1,4 @@
-et nu
+set nu
 set ruler
 set laststatus=2
 "set tabstop=4 softtabstop=0 noexpandtab shiftwidth=4
@@ -8,6 +8,9 @@ set hlsearch
 set backspace=2
 set noerrorbells
 set scrolloff=5
+set autoindent
+set smartindent
+
 match ErrorMsg /\s\+\%$\@<!$/
 
 au BufRead,BufNewfile Makefile set ts=4 sw=4 noexpandtab
