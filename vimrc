@@ -31,7 +31,7 @@ set colorcolumn=80                      " Set ruler at 80
 set tags=tags;/                         " Easy tags
 set clipboard=unnamed                   " Copy to system clipboard when you yank
 set cursorline                          " Highlight the current line
-"set mouse=a                             " Enable mouse use in all modes
+set mouse=a                             " Enable mouse use in all modes
 set ttymouse=xterm2
 set ttyfast                             " Send more characters for redraws
 
@@ -39,6 +39,7 @@ set ttyfast                             " Send more characters for redraws
 set tabstop=4                           " Tab width is 4 spaces
 set shiftwidth=4                        " Indent also with 4 spaces
 set expandtab                           " Expand tabs to spaces
+set smarttab
 
 let g:airline_theme = "powerlineish"
 let g:airline_powerline_fonts = 1
@@ -46,6 +47,7 @@ let g:solarized_termcolors=16
 colorscheme solarized
 
 syntax on                               " Turn syntax highlighting on
+highlight Comment cterm=italic
 
 match ErrorMsg /\s\+\%$\@<!$/
 
@@ -65,7 +67,7 @@ endfunction
 let g:ycm_confirm_extra_conf=0
 let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 
-let g:ycm_min_num_of_chars_for_completion               = 2
+"let g:ycm_min_num_of_chars_for_completion               = 
 let g:ycm_auto_trigger                                  = 1
 let g:ycm_collect_identifiers_from_tags_files           = 1
 let g:ycm_autoclose_preview_window_after_completion     = 1
