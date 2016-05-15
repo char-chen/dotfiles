@@ -8,6 +8,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'majutsushi/tagbar'
 call vundle#end()
 filetype plugin indent on
 
@@ -34,6 +35,7 @@ set cursorline                          " Highlight the current line
 set mouse=a                             " Enable mouse use in all modes
 set ttymouse=xterm2
 set ttyfast                             " Send more characters for redraws
+setlocal comments -=:/
 
 " configure tabwidth and insert spaces instead of tabs
 set tabstop=4                           " Tab width is 4 spaces
@@ -73,3 +75,7 @@ let g:ycm_collect_identifiers_from_tags_files           = 1
 let g:ycm_autoclose_preview_window_after_completion     = 1
 let g:ycm_autoclose_preview_window_after_insertion      = 1
 let g:ycm_collect_identifiers_from_comments_and_strings = 1
+
+" Tagbar Configurations
+nnoremap <silent> <F9> :TagbarToggle<CR>
+let g:tagbar_zoomwidth = 0
