@@ -1,0 +1,16 @@
+[user]
+	name = Charles Chen
+	email = cyuchen@ucdavis.edu
+[credential]
+	helper = osxkeychain
+[core]
+	editor = vim
+	excludesfile = /Users/Charles/.global_ignore
+[color]
+	ui = auto
+[push]
+	default = tracking
+[merge]
+	conflictstyle = diff3
+[rerere]
+	enabled = true

@@ -1,0 +1,7 @@
+alias rm='rm -i'
+alias mv='mv -i'
+alias csif='ssh char224@pc15.cs.ucdavis.edu'
+alias sftpcsif='sftp char224@pc15.cs.ucdavis.edu'
+alias vim='/usr/local/bin/vim'
+alias vi='/usr/local/bin/vim'
+alias ctags='/usr/local/bin/ctags'
